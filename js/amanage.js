@@ -1,40 +1,53 @@
 let newdata=[]
+let def=[]
 async function getdata(){
     try{
-        let url=await fetch('https://636c62baad62451f9fc8e23b.mockapi.io/products')
-       let data=await url.json()
+        let url=await fetch('https://636f63f1bb9cf402c81694bd.mockapi.io/starproduct')
+        let data=await url.json()
+    let s=document.querySelector('#s')
+    s.innerHTML=`
+    <h3>Total Products</h3>
+    <h3>${data.length}</h3>
+    `
+
+
+
        render(data)
        newdata=data
-       console.log(data)
+       def=data
+  
     }catch(err){
-        alert(err)
+       console.log(err)
     };
 } getdata()
 let main=document.querySelector('.product')
 function render(data){
-
+console.log(data)
     main.innerHTML=`${
     data.map((item) => {
-        let imageURL = `${item.img}`;
-        let name = `${item.proname}`;
+        let imageURL = `${item.avatar}`;
+        let name = `${item.name}`;
+        let des = `${item.description}`;
         let id=`${item.id}`;
         let price=`${item.price}`
-        return getAsCard(imageURL, name,id,price );
+      
+        return getAsCard(imageURL, name,des,id,price );
       })
-      .join("")}
+      .join("")
 }
 
 `
 }
 
-function getAsCard(imageURL, name, id,price) {
+function getAsCard(imageURL, name, des,id,price) {
  
     return `
     <div>
             <div class="img">   <img src=${imageURL} alt=""></div>
-            <p>${name}</p>
+            <p id='name'>${name}</p>
+            <p>${des}</p>
             <h3>Product Id:${id}</h3>
-            <h3>${price}</h3>
+            <h3>Rs: ${price}</h3>
             
             <div class="btn">
                    <div class="edit">Edit</div>
@@ -48,16 +61,16 @@ function getAsCard(imageURL, name, id,price) {
 let search=document.querySelector('.search').value;
 console.log(search)
 let fdata=newdata.filter(function(el){
-    return el.proname.includes(search)
+    return el.name.includes(search)
 })
 render(fdata)
 
 
  })
-function sortdata(){
-    console.log('work')
+ document.querySelector('select').addEventListener('change',function(){
+
     let select=document.querySelector('select').value;
-    console.dir(select)
+    
 if(select=='LOW TO HIGH'){
     newdata.sort((a, b) => a.price - b.price);
 render(newdata)
@@ -66,5 +79,12 @@ render(newdata)
     newdata.sort((a, b) => b.price - a.price);
     render(newdata)
 }
+if(select=="a"){
+   
+    render(def)
 }
-sortdata()
+
+ })
+function Delete(){
+
+}

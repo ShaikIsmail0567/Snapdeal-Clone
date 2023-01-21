@@ -4,11 +4,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/alogin.css">
+    <title>Admin Page</title>
+    <style>
+        div.main{
+        width: 400px;
+        margin: 60px auto 0px auto;
+       }
+       h1{
+        text-align: center;
+        padding: 20px;
+        
+        color: rgb(251, 249, 249);
+       }
+       div.reg{
+        width: 100%;
+        font-size: 18px;
+        border-radius: 10px;
+        background-color: teal;
+
+        box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+        color: #fff;
+       }
+       form{
+        margin: 30px;
+       }
+       label{
+        font-family: sans-serif;
+        font-size: 18px;
+        font-style: italic;
+       }
+       input#uname,#password{
+        width: 300px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        padding: 7px;
+        background-color: #fff;
+        box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+
+       }
+       input#submit{
+        width: 200px;
+        padding: 7px;
+        font-size: 16px;
+        font-family: sans-serif;
+        font-weight: 600;
+        border: none;
+        border-radius: 3px;
+        background-color: rgb(224, 128, 19);
+        color: white;
+        cursor: pointer;
+        margin-bottom: 10px;
+        margin-left: 50px;
+       }
+    </style>
 </head>
 <body>
+   
+    <div class="main">
+        <div class="reg">
+         <h1>Welcome Back Admin</h1>
+            <form>
+                <label for="">Email ID:</label>
+                <br>
+                <input id="uname" placeholder="Enter Your Email" />
+                <br><br>
+                <label for="">Password:</label>
+                <br>
+                <input id="password" placeholder="Enter Your Password" type="number"/>
+                <br><br>
+              
+                <a href="admin2.html"><input id="submit" type="submit" value="Submit" /></a>
+
+            
+            </form>
+        </div>
+      </div>
     
 </body>
-<script href="js/alogin.js"></script>
 </html>
+<script>
+    var adminObject= [
+      {
+        username:"admin@gmail.com",
+        password:123456
+      }
+    ]
+    document.querySelector("form").addEventListener("submit",getInfo);
+
+    function getInfo(event){
+        event.preventDefault();
+        var username=document.querySelector("#uname").value;
+        var password = document.querySelector("#password").value;
+
+        for(let i=0;i<adminObject.length;i++){
+            if(username==adminObject[i].username && password==adminObject[i].password){
+                window.location.assign("admanage.html")
+                alert("Login Successfully")
+            }else{
+                alert("Wrong Credential")
+                return
+            }
+        }
+    }
+   
+   
+
+
+</script>

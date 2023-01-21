@@ -4,7 +4,7 @@ async function getData(){
     var data = await x.json();
 
     table(data);
-   console.log(data)
+    
   }
   getData()
   let main =document.querySelector("#main")
@@ -21,15 +21,15 @@ function table(cardData) {
         let price=`${item.price}`
         let Status=""
         let color=""
-        if (item.id%3==0){
-            Status="No Sales"
+        if (item.id%7==0){
+            Status="stock Not Avilable"
             color="Red"
         }
-        else if(item.id%5==0){
-            Status="Average Sales"
+        else if(item.id%3==0||item.id%5==0){
+            Status="stock One Left"
             color="orange"
         }  else{
-            Status="High Demand"
+            Status="stock Avilable"
             color="green"
         }
         return getAsCard( name,id,price,Status,color );
@@ -49,3 +49,4 @@ function getAsCard(name,id,price,status,color ) {
       </div>
 `;
 }
+

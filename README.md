@@ -1,2 +1,1 @@
-#  HI star_deal
-hi hello
+# star_deal
