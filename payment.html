@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Page</title>
+    <link
+      rel="icon"
+      href="./logo.PNG"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="payments.css" />
+  </head>
+  <body >
+    <div id="payment-protection">
+      <span>
+        <a href="index.html">
+            <div class="logoimg">
+              <img
+                src="./logo.PNG"
+                alt=""
+              /> 
+              <img
+                src="./name.PNG"
+                alt=""
+              /> 
+            </div>
+          </a>
+      </span>
+      <p>100% Payment Protection, Easy Returns Policy</p>
+    </div>
+
+    <div id="Mcontainer">
+        <div id="Hright">
+            
+    
+        <div id="left">
+            <div id="right">
+                <div>
+                    <div class="payment-details" id="incresePayment">
+                        <div class="login-top payments active">
+                          <h2>Make Payment</h2>
+                          <div></div>
+                        </div>
+                        <div class="payment-details-saved-cards-part"  >
+                          
+                
+                          <div class="tab">
+                            <button
+                              class="tablinks active"
+                              onclick="openName(event, 'saved')"
+                              id="defaultOpen"
+                            >
+                              Saved
+                            </button>
+                            <button class="tablinks " onclick="openName(event, 'credit')">
+                              Credit Card
+                            </button>
+                            <button class="tablinks" onclick="openName(event, 'debit')">
+                              Debit Card
+                            </button>
+                            <button class="tablinks" onclick="openName(event, 'netB')">
+                              Net Banking
+                            </button>
+                            <button class="tablinks" onclick="openName(event, 'cod')">
+                              Cash On Delivery
+                            </button>
+                            <button class="tablinks" onclick="openName(event, 'emi')">
+                              EMI
+                            </button>
+                            <button class="tablinks" onclick="openName(event, 'vocher')">
+                              e-Gift Voucher
+                            </button>
+                            <button class="tablinks" onclick="openName(event, 'upi')">
+                              UPI
+                            </button>
+                          </div>
+                
+                          <div>
+                            <div id="saved" class="tabcontent" style="display: block;">
+                              <div>No Saved Cards</div>
+                            </div>
+                
+                            <div id="credit" class="tabcontent">
+                              <div class="credit-div-body">
+                                <div class="credit-card-head">Pay using Credit Card</div>
+                                <hr />
+                                <div class="credit-card-body">
+                                  <div class="card-number-input">
+                                    <h3>Card Number</h3>
+                                    <input
+                                      type="number"
+                                      class="cardnumber"
+                                      placeholder="Card Number"
+                                      name="cardnumber"
+                                    />
+                                  </div>
+                
+                                  <div class="expiry-date">
+                                    <h3>Expiry Date</h3>
+                                    <div class="four-inputs">
+                                      <select class="mm">
+                                        <option>MM</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                      </select>
+                                      <span class="slash">/</span>
+                                      <select class="yy">
+                                        <option>YY</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                        <option value="2027">2027</option>
+                                        <option value="2028">2028</option>
+                                        <option value="2029">2029</option>
+                                        <option value="2030">2030</option>
+                                        <option value="2031">2031</option>
+                                        <option value="2032">2032</option>
+                                        <option value="2033">2033</option>
+                                        <option value="2034">2034</option>
+                                        <option value="2035">2035</option>
+                                        <option value="2036">2036</option>
+                                        <option value="2037">2037</option>
+                                        <option value="2038">2038</option>
+                                        <option value="2039">2039</option>
+                                        <option value="2040">2040</option>
+                                        <option value="2041">2041</option>
+                                        <option value="2042">2042</option>
+                                        <option value="2043">2043</option>
+                                        <option value="2044">2044</option>
+                                        <option value="2045">2045</option>
+                                        <option value="2046">2046</option>
+                                        <option value="2047">2047</option>
+                                        <option value="2048">2048</option>
+                                        <option value="2049">2049</option>
+                                        <option value="2050">2050</option>
+                                        <option value="2051">2051</option>
+                                        <option value="2052">2052</option>
+                                        <option value="2053">2053</option>
+                                        <option value="2054">2054</option>
+                                        <option value="2055">2055</option>
+                                        <option value="2056">2056</option>
+                                        <option value="2057">2057</option>
+                                        <option value="2058">2058</option>
+                                        <option value="2059">2059</option>
+                                        <option value="2060">2060</option>
+                                        <option value="2061">2061</option>
+                                        <option value="2062">2062</option>
+                                        <option value="2063">2063</option>
+                                        <option value="2064">2064</option>
+                                        <option value="2065">2065</option>
+                                        <option value="2066">2066</option>
+                                        <option value="2067">2067</option>
+                                        <option value="2068">2068</option>
+                                        <option value="2069">2069</option>
+                                        <option value="2070">2070</option>
+                                      </select>
+                                      <h3>CVV</h3>
+                                      <input
+                                        type="password"
+                                        class="cvv"
+                                        placeholder="CVV"
+                                        maxlength="3"
+                                      />
+                                      <div class="quation-mark">?</div>
+                                    </div>
+                                  </div>
+                                  <div class="pay-amout-button">
+                                    <a href="thankyou.html"><button>PAY</button></a>
+                                  </div>
+                                </div>
+                                <div class="credit-card-footer">
+                                  <p class="saving-card-details">
+                                    This card will be saved for a faster payment experience
+                                  </p>
+                
+                                  <div class="shiled-logo">
+                                    <i class="fas fa-user-shield"></i>
+                                    <span>TrustPay:</span>
+                                    <span>100% Payment Protection,Easy Returns Policy</span>
+                                  </div>
+                                  <br />
+                                  <footer>
+                                    <div>
+                                      By placing the order, I have read and agreed to
+                                      snapdeal.com's
+                                      <a href=""> Terms of Use</a> |
+                                      <a href=""> Terms of Sale</a>
+                                    </div>
+                                  </footer>
+                                </div>
+                              </div>
+                            </div>
+                
+                            <div id="debit" class="tabcontent">
+                              <div class="credit-div-body">
+                                <div class="credit-card-head">Pay using Debit Card</div>
+                                <hr />
+                                <div class="credit-card-body">
+                                  <div class="card-number-input">
+                                    <h3>Card Number</h3>
+                                    <input
+                                      type="number"
+                                      class="cardnumber"
+                                      placeholder="Card Number"
+                                      name="cardnumber"
+                                    />
+                                  </div>
+                
+                                  <div class="expiry-date">
+                                    <h3>Expiry Date</h3>
+                                    <div class="four-inputs">
+                                      <select class="mm">
+                                        <option>MM</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                      </select>
+                                      <span class="slash">/</span>
+                                      <select class="yy">
+                                        <option>YY</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                        <option value="2027">2027</option>
+                                        <option value="2028">2028</option>
+                                        <option value="2029">2029</option>
+                                        <option value="2030">2030</option>
+                                        <option value="2031">2031</option>
+                                        <option value="2032">2032</option>
+                                        <option value="2033">2033</option>
+                                        <option value="2034">2034</option>
+                                        <option value="2035">2035</option>
+                                        <option value="2036">2036</option>
+                                        <option value="2037">2037</option>
+                                        <option value="2038">2038</option>
+                                        <option value="2039">2039</option>
+                                        <option value="2040">2040</option>
+                                        <option value="2041">2041</option>
+                                        <option value="2042">2042</option>
+                                        <option value="2043">2043</option>
+                                        <option value="2044">2044</option>
+                                        <option value="2045">2045</option>
+                                        <option value="2046">2046</option>
+                                        <option value="2047">2047</option>
+                                        <option value="2048">2048</option>
+                                        <option value="2049">2049</option>
+                                        <option value="2050">2050</option>
+                                        <option value="2051">2051</option>
+                                        <option value="2052">2052</option>
+                                        <option value="2053">2053</option>
+                                        <option value="2054">2054</option>
+                                        <option value="2055">2055</option>
+                                        <option value="2056">2056</option>
+                                        <option value="2057">2057</option>
+                                        <option value="2058">2058</option>
+                                        <option value="2059">2059</option>
+                                        <option value="2060">2060</option>
+                                        <option value="2061">2061</option>
+                                        <option value="2062">2062</option>
+                                        <option value="2063">2063</option>
+                                        <option value="2064">2064</option>
+                                        <option value="2065">2065</option>
+                                        <option value="2066">2066</option>
+                                        <option value="2067">2067</option>
+                                        <option value="2068">2068</option>
+                                        <option value="2069">2069</option>
+                                        <option value="2070">2070</option>
+                                      </select>
+                                      <h3>CVV</h3>
+                                      <input
+                                        type="password"
+                                        class="cvv"
+                                        placeholder="CVV"
+                                        maxlength="3"
+                                      />
+                                      <div class="quation-mark">?</div>
+                                    </div>
+                                  </div>
+                                  <div class="pay-amout-button">
+                                   <a href="thankyou.html"> <button>PAY</button></a>
+                                  </div>
+                                </div>
+                                <div class="credit-card-footer">
+                                  <p class="saving-card-details">
+                                    This card will be saved for a faster payment experience
+                                  </p>
+                
+                                  <div class="shiled-logo">
+                                    <i class="fas fa-user-shield"></i>
+                                    <span>TrustPay:</span>
+                                    <span>100% Payment Protection,Easy Returns Policy</span>
+                                  </div>
+                                  <br />
+                                  <footer>
+                                    <div>
+                                      By placing the order, I have read and agreed to
+                                      snapdeal.com's
+                                      <a href=""> Terms of Use</a> |
+                                      <a href=""> Terms of Sale</a>
+                                    </div>
+                                  </footer>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="netB" class="tabcontent">
+                              <div>
+                                <div class="credit-card-head">Pay using Net Banking</div>
+                                <hr />
+                                <div class="credit-card-body">
+                                  <div class="display-flex-net-banking">
+                                    <div>Select Banks</div>
+                                    <select id="banks-list">
+                                      <option>Select</option>
+                                      <option value="1">Citibank</option>
+                                      <option value="2">IDFC Bank</option>
+                                      <option value="3">State Bank of India</option>
+                                      <option value="4">Bank Of Baroda</option>
+                                      <option value="5">HDFC Bank</option>
+                                      <option value="6">ICICI Bank</option>
+                                      <option value="7">AXIS Bank</option>
+                                      <option value="8">UCO Bank</option>
+                                      <option value="9">Union Bank of India</option>
+                                      <option value="10">YES Bank</option>
+                                    </select>
+                                  </div>
+                                  <br />
+                                  <div class="pay-amout-button">
+                                    <button>PAY</button>
+                                  </div>
+                                </div>
+                                <div class="credit-card-footer">
+                                  <div class="shiled-logo">
+                                    <i class="fas fa-user-shield"></i>
+                                    <span>TrustPay:</span>
+                                    <span>100% Payment Protection,Easy Returns Policy</span>
+                                  </div>
+                                  <br />
+                                  <footer>
+                                    <div>
+                                      By placing the order, I have read and agreed to
+                                      snapdeal.com's
+                                      <a href=""> Terms of Use</a> |
+                                      <a href=""> Terms of Sale</a>
+                                    </div>
+                                  </footer>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="cod" class="tabcontent">
+                              <div>
+                                <div class="credit-card-head">Pay using Cash On Delivery</div>
+                                <hr />
+                                <div class="credit-card-body">
+                                  <div class="pay-amout-button">
+                                   <a href="otp.html"><button>PAY</button></a> 
+                                  </div>
+                                </div>
+                                <div class="credit-card-footer">
+                                  <div class="shiled-logo">
+                                    <i class="fas fa-user-shield"></i>
+                                    <span>TrustPay:</span>
+                                    <span>100% Payment Protection,Easy Returns Policy</span>
+                                  </div>
+                                  <br />
+                                  <footer>
+                                    <div>
+                                      By placing the order, I have read and agreed to
+                                      snapdeal.com's
+                                      <a href=""> Terms of Use</a> |
+                                      <a href=""> Terms of Sale</a>
+                                    </div>
+                                  </footer>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="emi" class="tabcontent">
+                              <div>
+                                <div class="credit-card-head">Pay using EMI</div>
+                                <hr />
+                                <div class="credit-card-body">
+                                  <div class="padding-emi">
+                                    <div>Select Credit Card</div>
+                                    <select id="banks-list">
+                                      <option>Select</option>
+                                      <option value="1">RBL Bank</option>
+                                    </select>
+                                  </div>
+                                  <br />
+                                </div>
+                                <footer>
+                                  <div>
+                                    By placing the order, I have read and agreed to
+                                    snapdeal.com's
+                                    <a href=""> Terms of Use</a> |
+                                    <a href=""> Terms of Sale</a>
+                                  </div>
+                                </footer>
+                              </div>
+                            </div>
+                            <div id="vocher" class="tabcontent"></div>
+                
+                            <div id="upi" class="tabcontent"></div>
+                          </div>
+                
+                         
+                        </div>
+                      </div>
+                   
+
+                </div>
+    
+            </div>
+           
+        </div>
+        <div id="mainright">
+            <div id="second">
+                <div>
+                    <h2>SHIP TO:</h2>
+                    <hr>
+                    <p id="name"></p>
+                    <p id="address"></p>
+                    <p id="district"></p>
+                    <p id="number"></p>
+    
+                </div>
+            </div>
+            <div id="third">
+                <div>
+                    <h2>SHIPPING METHOD:</h2>
+                    <hr>
+                    <p>Best Way-Max 7 Business days</p>
+    
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>
+
+<script src="payments.js"></script>

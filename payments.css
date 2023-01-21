@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Lato", sans-serif;
+    background-color: whitesmoke;
+  }
+  #mainright{
+    margin-left: 1000px;
+  }
+  #mainright>div{
+    font-size: 20px;
+    line-height: 2;
+  }
+  
+  #payment-protection {
+    background-color: #fd0c54;
+    justify-content: space-evenly;
+    display: flex;
+    height: 96px;
+    padding: 0px;
+    justify-content: space-between;
+  }
+
+  #payment-protection > p {
+    padding-top: 30px;
+    color: white;
+  }
+  .logoimg {
+    display: flex;
+    margin-top: 24px;
+    margin-left: 25px;
+  }
+  .logoimg img{
+    height: 35px;
+    width: 130px;
+  }
+  .logoimg:nth-child(1){
+    width: 30px;
+  }
+
+  .payment-details {
+    display: grid;
+    grid-template-rows: 70px 0px;
+    grid-gap: 0px;
+    margin-bottom: 15px;
+  }
+  
+  .payment-details > div {
+    /* background-color: aqua; */
+    padding: 20px;
+  }
+  
+  .payments h2 {
+    font-size: 16px;
+    margin-right: 26%;
+  }
+  .tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: white;
+    width: 27%;
+    height: 500px;
+  }
+  
+  .tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 15px 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+  }
+  
+  .tab button:hover {
+    background-color: rgb(236, 230, 230);
+  }
+  
+  .tab button.active {
+    background-color: white;
+    border-left: 4px solid #e40046;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-right: none;
+  }
+  
+  .tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-left: none;
+    height: 0px;
+  }
+  .login-top.active + .payment-details-saved-cards-part {
+    display: grid;
+    font-size: 15px;
+    grid-template-columns: 150px repeat(2, 300px);
+    grid-template-rows: repeat(3, 170px);
+    /* border: 2px solid red;      */
+    padding: 10px;
+    grid-gap: 20px;
+    height: 600px;
+    visibility: visible;
+  }
+  .credit-div-body {
+    height: 60%;
+  }
+  
+  .credit-card-head {
+    font-size: 15px;
+    padding: 10px;
+  }
+  .credit-card-body {
+    width: 74%;
+    padding: 2%;
+    font-size: 14px;
+  }
+  .card-number-input {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0%;
+  }
+  .card-number-input h3 {
+    font-size: 16px;
+    margin-top: 6px;
+  }
+  .expiry-date {
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 0%;
+  }
+  .expiry-date h3 {
+    font-size: 14px;
+    margin-top: 2px;
+  }
+  .four-inputs {
+    display: flex;
+    justify-content: space-around;
+  }
+  .four-inputs > .mm,
+  .yy,
+  .cvv {
+    width: 18%;
+    padding-top: 0%;
+    padding: 2px;
+    outline: none;
+    border: 1px solid #ccc;
+  }
+  .slash {
+    font-weight: bold;
+  }
+  .quation-mark {
+    border: 1px solid blue;
+    width: 5%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: blue;
+    font-weight: bold;
+  }
+  .cardnumber {
+    width: 62%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 3px;
+  }
+  .saving-card-details {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  .saving-card-details > .quation-mark {
+    width: 1%;
+  }
+  
+  footer {
+    font-size: 12px;
+  }
+  .pay-amout-button > button {
+    background-color: #e40046;
+    width: 50%;
+    padding: 2.5%;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  .pay-amout-button > a > button {
+    background-color: #e40046;
+    width: 50%;
+    padding: 2.5%;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  .credit-card-footer {
+    padding: 2%;
+  }
+  .bank-offer-for-makepayment {
+    height: 40%;
+  }
+  .display-flex-net-banking {
+    display: flex;
+    justify-content: space-between;
+  }
+  .display-flex-net-banking > select {
+    width: 50%;
+    padding: 1%;
+    height: 40%;
+  }
+  
+  .padding-emi > select {
+    margin-top: 3%;
+    width: 30%;
+  }
+  .bank-offer-for-makepayment {
+    height: 100%;
+    display: flex;
+    border: 1px solid gray;
+    padding: 2%;
+    justify-content: space-between;
+  }
+  .bank-offer-for-makepayment > div:nth-child(2) {
+    padding-top: 20px;
+  }
+
+  
+  .payment-details-saved-cards-part {
+    display: grid;
+    font-size: 15px;
+    grid-template-columns: 150px repeat(2, 300px);
+    grid-template-rows: repeat(3, 170px);
+
+    padding: 10px;
+    grid-gap: 20px;
+
+  }
+  
+   .payment-details-saved-cards-part > div:nth-child(1) {
+
+    width: 100%;
+    grid-area: 1/1/3/2;
+
+  } 
+  .payment-details-saved-cards-part > div:nth-child(2) {
+    grid-area: 1/2/2/4;
+
+  }
+  

@@ -1,0 +1,20 @@
+GET https://fakestoreapi.com/products
+
+
+####
+POST https://fakestoreapi.com/products
+
+Content-Type: application/json
+{
+ "id": 21,
+    "title": "saree",
+    "price": 12.99,
+    "description":"heleo;ldjah",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
+    "rating": {
+      "rate": 3.6,
+      "count": 145
+    }
+
+}
