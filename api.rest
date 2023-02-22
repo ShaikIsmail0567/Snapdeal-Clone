@@ -1,20 +1,34 @@
 GET https://fakestoreapi.com/products
 
+###
+GET https://dummyjson.com/products
+
+
+####
+POST https://fakestoreapi.com/products
+
+
 
 ####
 POST https://fakestoreapi.com/products
 
 Content-Type: application/json
 {
- "id": 21,
-    "title": "saree",
-    "price": 12.99,
-    "description":"heleo;ldjah",
-    "category": "women's clothing",
-    "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
-    "rating": {
-      "rate": 3.6,
-      "count": 145
-    }
-
-}
+      "id": 101,
+      "title": "Handcraft Chinese style",
+      "description": "Handcraft Chinese style art luxury palace hotel villa mansion home decor ceramic vase with brass fruit plate",
+      "price": 60,
+      "discountPercentage": 15.34,
+      "rating": 4.44,
+      "stock": 7,
+      "brand": "luxury palace",
+      "category": "home-decoration",
+      "thumbnail": "https://i.dummyjson.com/data/products/29/thumbnail.webp",
+      "images": [
+        "https://i.dummyjson.com/data/products/29/1.jpg",
+        "https://i.dummyjson.com/data/products/29/2.jpg",
+        "https://i.dummyjson.com/data/products/29/3.webp",
+        "https://i.dummyjson.com/data/products/29/4.webp",
+        "https://i.dummyjson.com/data/products/29/thumbnail.webp"
+      ]
+    },
